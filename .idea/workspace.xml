@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="828cd0d7-72ad-4d3c-ac3a-07e97cee22b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile.windows" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gettingstarted/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gettingstarted/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gettingstarted/static/humans.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gettingstarted/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gettingstarted/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/static/lang-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/templates/db.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1k2ruQtuwHrps2TqQ6ql0gRZhB6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="828cd0d7-72ad-4d3c-ac3a-07e97cee22b4" name="Default Changelist" comment="" />
+      <created>1604909750622</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604909750622</updated>
+      <workItem from="1604909752393" duration="808000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="624" y="347" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604909921564">
+      <screen x="0" y="23" width="1792" height="1032" />
+    </state>
+    <state x="624" y="347" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1792.1032@0.23.1792.1032" timestamp="1604909921564" />
+    <state x="397" y="178" key="SettingsEditor" timestamp="1604909906512">
+      <screen x="0" y="23" width="1792" height="1032" />
+    </state>
+    <state x="397" y="178" key="SettingsEditor/0.23.1792.1032@0.23.1792.1032" timestamp="1604909906512" />
+  </component>
+</project>
