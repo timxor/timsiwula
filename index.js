@@ -118,10 +118,10 @@ app.get('/e', function (req, res) {
   res.end();
 })
 
-
-const server = app.listen(process.env.PORT || 5000, () => {
-  console.log("date = ", date);
-  console.log("current_hour = ", current_hour);
-  console.log('Express server listening on port %d in %s mode', server.address().port, app.settings.env);
-  open('http://127.0.0.1:5000');
+//process.env.PORT
+const server = app.listen($PORT || 5000, () => {
+  // console.log("date = ", date);
+  // console.log("current_hour = ", current_hour);
+  // console.log('Express server listening on port %d in %s mode', server.address().port, app.settings.env);
+  // open('http://127.0.0.1:5000');
 });

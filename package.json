@@ -1,9 +1,10 @@
 {
   "name": "www.timsiwula.com",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "tim siwulas portfolio website, www.timsiwula.com",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run build",
     "start": "node index.js",
     "local": "nodemon index.js"
   },
