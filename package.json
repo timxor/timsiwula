@@ -10,7 +10,6 @@
   "dependencies": {
     "body-parser": "latest",
     "cheerio": "latest",
-    "express": "latest",
     "express-generator": "latest",
     "fs": "latest",
     "grunt-cli": "latest",
@@ -37,8 +36,8 @@
   "author": "Tim Siwula <tim@acceptance.ai> (https://www.timsiwula.com)",
   "license": "MIT",
   "devDependencies": {
-    "budo": "latest",
-    "express": "latest",
-    "watchify": "latest"
+    "budo": "^11.6.4",
+    "express": "^4.17.1",
+    "watchify": "^3.11.1"
   }
 }
