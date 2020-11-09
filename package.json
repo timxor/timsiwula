@@ -1,0 +1,44 @@
+{
+  "name": "www.timsiwula.com",
+  "version": "0.0.1",
+  "description": "tim siwulas portfolio website, www.timsiwula.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "local": "nodemon index.js"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "cheerio": "latest",
+    "express": "latest",
+    "express-generator": "latest",
+    "fs": "latest",
+    "grunt-cli": "latest",
+    "gulp": "latest",
+    "http2": "latest",
+    "node-sass": "latest",
+    "nodemon": "latest",
+    "npm": "latest",
+    "open": "latest",
+    "pg": "latest",
+    "pg-promise": "latest",
+    "request": "latest",
+    "serve-index": "latest",
+    "uglify-js": "latest"
+  },
+  "engines": {
+    "node": "latest",
+    "npm": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timxor/timsiwula.git"
+  },
+  "author": "Tim Siwula <tim@acceptance.ai> (https://www.timsiwula.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "budo": "latest",
+    "express": "latest",
+    "watchify": "latest"
+  }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>https://www.timsiwula.com - Tim Siwula</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-overflow-scrolling: touch;
+            overflow-y: scroll;
+        }
+
+        header {
+            font-family: Times;
+            color: darkslategray;
+        }
+
+        body {
+            font-family: Times;
+            color: darkslategray
+        }
+
+        footer {
+            font-family: Times;
+            color: darkslategray
+        }
+
+        h2 {
+            font-family: Times;
+            color: deepskyblue;
+        }
+
+        h3 {
+            font-family: Times;
+            color: darkslategray
+        }
+
+        a:link {
+            color: darkred;
+            background-color: transparent;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: deepskyblue;
+            background-color: transparent;
+            text-decoration: underline
+        }
+
+        a:visited {
+            color: darkred;
+            background-color: transparent;
+            text-decoration: none
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <h3> timsiwula.com is under construction. 301 redirects still good ;-) </h2>
+
+</head>
+
+<body background="congruent_pentagon.png">
+
+<script src="build/three.js"></script>
+<script src="js/renderers/Projector.js"></script>
+<script src="js/renderers/CanvasRenderer.js"></script>
+<script src="js/libs/stats.min.js"></script>
+
+
+<h3>Current Projects</h3>
+
+<h3>___Deployed in Production</h3>
+<ul>
+    <li><a href="http://happycha.in">www.happycha.in</a> -- An ethereum blockchain developers API
+    <li><a href="https://www.npmjs.com/package/happychain"> npm api module</a> -- An ethereum blockchain developers API
+    <li><a href="http://m.me/144000482774878">The Comedy Bot</a> -- A facebook messenger chatbot
+    <li><a href="sms://+17203364682">A sms text chatbot (720)-336-4682 </a> -- A sms text chatbot
+</ul>
+
+
+<h3>___ (old, 2017) Work in progress</h3>
+
+<ul>
+    <li><a href="http://youtalky.com">YouTalky.com</a> -- Audio Search Engine
+    <li><a href="http://tinyflights.com">TinyFlights.com</a> -- A fare aggregator and travel metasearch engine platform for private charter flights
+    <li><a href="http://howdoiprogram.com">HowDoIProgram.com</a> -- Universal, language agnostic package manager and library.
+</ul>
+
+<h3>Community profiles</h3>
+<ul>
+    <li><a href="https://www.timsiwula.com">Portfolio</a></li>
+    <li><a href="https://www.timsiwula.com/resume.2020.pdf">My Resume</a></li>
+    <li><a href="http://github.com/timxor">My Github</a></li>
+    <li><a href="http://linkedin.com/in/timsiwula">My Linkedin</a></li>
+    <li><a href="https://angel.co/tcsiwula">My AngelList</a></li>
+    <li><a href="http://twitter.com/timxor">My Twitter</a></li>
+</ul>
+
+<p>Thank you for visiting :) </p>
+
+<script>
+    var SEPARATION = 100, AMOUNTX = 50, AMOUNTY = 50;
+    var container, stats;
+    var camera, scene, renderer;
+    var particles, particle, count = 0;
+    var mouseX = 0, mouseY = 0;
+    var windowHalfX = window.innerWidth / 2;
+    var windowHalfY = window.innerHeight / 2;
+    init();
+    animate();
+    function init() {
+        container = document.createElement('div');
+        document.body.appendChild(container);
+        camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 2, 10000);
+        camera.position.z = 1000;
+        scene = new THREE.Scene();
+        particles = new Array();
+        var PI2 = Math.PI * 2;
+        var material = new THREE.SpriteCanvasMaterial({
+            program: function (context) {
+                context.beginPath();
+                context.arc(0, 0, 0.5, 0, PI2, true);
+                context.fill();
+            }
+        });
+        var i = 0;
+        for (var ix = 0; ix < AMOUNTX; ix++) {
+            for (var iy = 0; iy < AMOUNTY; iy++) {
+                particle = particles[i++] = new THREE.Sprite(material);
+                particle.position.x = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 );
+                // The default x to z 3D depth perception is ----> [iy * SEPARATION]
+                // x to x 2D perception is ----> [iy -10 * SEPARATION]
+                // x to x 3d perception is ----> [iy -10 * SEPARATION]
+                particle.position.z =
+                    iy * SEPARATION -
+                    ( ( AMOUNTY * SEPARATION ) / 2 );
+                scene.add(particle);
+            }
+        }
+        renderer = new THREE.CanvasRenderer();
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        container.appendChild(renderer.domElement);
+        document.addEventListener('mousemove', onDocumentMouseMove, true);
+        document.addEventListener('touchstart', onDocumentTouchStart, true);
+        document.addEventListener('touchmove', onDocumentTouchMove, true);
+        window.addEventListener('resize', onWindowResize, false);
+    }
+    function onWindowResize() {
+        windowHalfX = window.innerWidth / 2;
+        windowHalfY = window.innerHeight / 2;
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+    function onDocumentMouseMove(event) {
+        mouseX = event.clientX - windowHalfX;
+        mouseY = event.clientY - windowHalfY;
+    }
+    function onDocumentTouchStart(event) {
+        if (event.touches.length === 1) {
+            event.preventDefault();
+            mouseX = event.touches[0].pageX - windowHalfX;
+            mouseY = event.touches[0].pageY - windowHalfY;
+        }
+    }
+    function onDocumentTouchMove(event) {
+        if (event.touches.length === 1) {
+            event.preventDefault();
+            mouseX = event.touches[0].pageX - windowHalfX;
+            mouseY = event.touches[0].pageY - windowHalfY;
+        }
+    }
+    function animate() {
+        requestAnimationFrame(animate);
+        render();
+    }
+    function render() {
+        camera.position.x = ( mouseX - camera.position.x ) * .05;
+        camera.position.y = ( -mouseY - camera.position.y ) * .05;
+        camera.lookAt(scene.position);
+        var i = 0;
+        for (var ix = 0; ix < AMOUNTX; ix++) {
+            for (var iy = 0; iy < AMOUNTY; iy++) {
+                particle = particles[i++];
+                particle.position.y = (
+                    -Math.sin(
+                        // speed --> slow == ( ix + count ) * 0.1 )
+                        // speed --> fast == ( ix + count ) * 0.5 )
+                        ( ix + count ) * 0.01) * 50 ) +
+                    (-Math.sin(
+                        ( iy + count ) * 0.1) * 50 );
+                particle.scale.x = particle.scale.y = ( Math.sin(( ix + count ) * 0.3) + 1 ) * 4 +
+                    ( Math.sin(( iy + count ) * 0.5) + 1 ) * 4;
+            }
+        }
+        renderer.render(scene, camera);
+        count += 0.1;
+    }
+</script>
+
+</body>
+
+<footer background="congruent_pentagon.png">
+
+
+</footer>
+
+</html>

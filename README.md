@@ -1,18 +1,25 @@
-# timsiwula.com
+# www.timsiwula.com
 
 Allow me to introduce my amazing repository of nothing.
 
 www.timsiwula.com
 
 
-## Outline of Files
+### INSTALL DEPS
 
-- .htaccess
-- CNAME
-    - timsiwula.com
-- Procfile
-    - web: nodejs
+```
+npm install
+```
 
 
+### RUN LOCALLY
 
-heroku web local
+```
+heroku local web
+
+```
+or
+```
+npm start
+open http://127.0.0.1:5000/
+```
